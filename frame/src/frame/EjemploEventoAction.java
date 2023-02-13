@@ -8,16 +8,18 @@ import javax.swing.*;
  *
  * @author emiliomurillo
  */
-public class EjemploEventoAction extends JFrame{
+public class EjemploEventoAction extends JFrame {
+
     JButton btn1;
-    public EjemploEventoAction(){
+
+    public EjemploEventoAction() {
         super("EVENTOS");
         this.setLayout(null);
 
         btn1 = new JButton("ACCIÓN");
-        btn1.setBounds(100,100,100,50);
+        btn1.setBounds(100, 100, 100, 50);
         this.add(btn1);
-        
+
         btn1.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
@@ -25,12 +27,13 @@ public class EjemploEventoAction extends JFrame{
                 JOptionPane.showMessageDialog(btn1, "DETECTÉ EL EVENTO ACTION");
             }
         });
-        
+
         this.setBounds(100, 100, 500, 300);
         this.setVisible(true);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-    
+
     }
+
     public static void main(String[] args) {
         new EjemploEventoAction();
     }
