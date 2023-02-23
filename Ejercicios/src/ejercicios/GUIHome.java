@@ -1,8 +1,7 @@
 package ejercicios;
 
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
+import java.awt.event.*;
 import javax.swing.*;
 
 /**
@@ -14,11 +13,12 @@ public class GUIHome extends JFrame {
     JPanel contenedorAPP;
     JPanel contenedorBotones;
     JPanel contenedorVentanas;
-    JButton btnPunto, btnRecta;
+    JButton btnPunto, btnRecta, btnSalir;
 
     public GUIHome() {
-        super("Aplicación para calcular distancia de una recta");
-        
+
+        super("Distancia de una recta");
+
         btnPunto = new JButton("CREAR PUNTO");
         btnPunto.setSize(200, 40);
         btnPunto.addActionListener(new ActionListener() {
@@ -36,12 +36,22 @@ public class GUIHome extends JFrame {
                 mostrarVentanas(new PanelRecta());
             }
         });
+        
+        btnSalir = new JButton("SALIR");
+        btnSalir.setSize(200, 40);
+        btnSalir.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent e) {
+                dispose();
+            }
+        });
 
         contenedorBotones = new JPanel();
         contenedorBotones.setBackground(new Color(74, 171, 44));
         contenedorBotones.setLayout(new FlowLayout(FlowLayout.CENTER));
         contenedorBotones.add(btnPunto);
         contenedorBotones.add(btnRecta);
+        contenedorBotones.add(btnSalir);
 
         contenedorVentanas = new JPanel();
         contenedorVentanas.setBackground(new Color(200, 200, 200));
@@ -59,7 +69,7 @@ public class GUIHome extends JFrame {
         this.add(contenedorAPP, BorderLayout.CENTER);
 
         this.setBounds(100, 100, 720, 480);
-        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE); 
+        this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }
 
     private void mostrarVentanas(JPanel ventana) {
