@@ -16,8 +16,8 @@ public class PaginaDos extends JPanel {
         titulo.setForeground(new Color(255, 255, 255));
         titulo.setFont(new Font("Algerian", Font.BOLD, 36));
 
-        this.setBackground(new Color(255, 255, 0));
         this.setSize(680, 420);
+        this.setBackground(new Color(255, 0, 0));
         this.add(titulo, BorderLayout.CENTER);
     }
 }

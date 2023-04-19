@@ -12,12 +12,10 @@ import javax.swing.*;
  * @author emiliomurillo
  */
 public class FrameCodigo extends JFrame {
-
     JPanel contenedorAPP;
     JPanel contenedorBotones;
     JPanel contenedorVentanas;
     JButton btn_pagina1, btn_pagina2;
-
     public FrameCodigo() {
         btn_pagina1 = new JButton("PÁGINA UNO");
         btn_pagina1.setSize(200, 40);
@@ -48,7 +46,7 @@ public class FrameCodigo extends JFrame {
         contenedorVentanas.setLayout(new BorderLayout());
 
         mostrarVentanas(new VentanaInicial());
-
+        
         contenedorAPP = new JPanel();
         contenedorAPP.setBackground(new Color(255, 255, 255));
         contenedorAPP.setLayout(new BorderLayout());

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+  <Properties>
+    <Property name="defaultCloseOperation" type="int" value="3"/>
+  </Properties>
+  <SyntheticProperties>
+    <SyntheticProperty name="formSizePolicy" type="int" value="1"/>
+    <SyntheticProperty name="generateCenter" type="boolean" value="false"/>
+  </SyntheticProperties>
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="2"/>
+  </AuxValues>
+
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="63" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="liga1" min="-2" max="-2" attributes="0"/>
+                  <Group type="102" alignment="0" attributes="0">
+                      <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
+                      <Component id="liga3" min="-2" max="-2" attributes="0"/>
+                  </Group>
+              </Group>
+              <EmptySpace min="-2" pref="103" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="0" attributes="0">
+                  <Component id="liga4" min="-2" max="-2" attributes="0"/>
+                  <Component id="liga2" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="37" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" alignment="0" attributes="0">
+              <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="liga1" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="liga2" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace min="-2" pref="66" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="liga3" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="liga4" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
+              <EmptySpace pref="44" max="32767" attributes="0"/>
+          </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="practica8_ligaprograma.Liga" name="liga1">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Calculadora"/>
+        <Property name="comando" type="java.lang.String" value="open /System/Applications/Calculator.app"/>
+      </Properties>
+    </Component>
+    <Component class="practica8_ligaprograma.Liga" name="liga2">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Microsoft OneNote"/>
+        <Property name="comando" type="java.lang.String" value="open /Applications/Microsoft OneNote.app"/>
+      </Properties>
+    </Component>
+    <Component class="practica8_ligaprograma.Liga" name="liga3">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Notas"/>
+        <Property name="comando" type="java.lang.String" value="open /System/Applications/Notes.app"/>
+      </Properties>
+    </Component>
+    <Component class="practica8_ligaprograma.Liga" name="liga4">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Notas adhesivas"/>
+        <Property name="comando" type="java.lang.String" value="open /System/Applications/Stickies.app"/>
+      </Properties>
+    </Component>
+  </SubComponents>
+</Form>
